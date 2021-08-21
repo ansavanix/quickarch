@@ -83,7 +83,8 @@ class quickarch {
 			scriptWriter.close();
 			System.out.println("Script has been written to file: install.sh");
 			
-		} catch (IOException e) {
+		} 
+		catch (IOException e) {
 			System.out.print(e.getMessage());
 		}
 	}
@@ -149,7 +150,7 @@ class quickarch {
 		install("networkmanager");
 		enable("NetworkManager");
 		
-		//Use a firwall
+		//Use a firewall
 		install("ufw");
 		archroot("ufw enable");
 		enable("ufw");
